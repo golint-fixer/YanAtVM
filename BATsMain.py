@@ -114,12 +114,12 @@ class BuildWebProduct:
 
 class VC_cred():
     user = 'administrator'
-    pwd = 'ca$hc0w'
+    pwd = '******'
 
 
 class Domain_cred():
     user = 'hovdi\\administrator'
-    pwd = 'ca$hc0w'
+    pwd = '******'
 
 
 class DownloadError(Exception):
@@ -878,7 +878,7 @@ class VMUtil(object):
     def __init__(self, host):
         self.host = host
         self.user = 'administrator'
-        self.pwd = 'ca$hc0w'
+        self.pwd = '******'
 
     @property
     def vm_summary(self):
@@ -1693,7 +1693,7 @@ class RDSHRunner(AbstractBATsEnvBase):
                          'SUPPRESS_RUNONCE_CHECK=1 ' \
                          'ADDLOCAL=ALL" ' \
                          'VDM_SERVER_USERNAME=hovdi/administrator" ' \
-                         'VDM_SERVER_PASSWORD=ca$hc0w" ' \
+                         'VDM_SERVER_PASSWORD=******" ' \
                          'VDM_SERVER_NAME="' + bats_env_parameters.broker_ip
 
             cmd_and_args = [
